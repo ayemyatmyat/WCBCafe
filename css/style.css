@@ -15,7 +15,6 @@ a {
 img {
     max-width: 100%;
 }
-
 /* 背景画像 */
 .big-bg {
     background-size: cover;
@@ -23,14 +22,13 @@ img {
     background-repeat: no-repeat;
 }
 #home {
-    background-image: url(../images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd);
+    background-image: url(../images/main-bg.jpg), linear-gradient(#C9FFBF, #FFAFBD);
     background-blend-mode: luminosity;
     min-height: 100vh;
 }
 #home .page-title {
     text-transform: none;
 }
-
 /* HEADER */
 .page-header {
     display: flex;
@@ -61,7 +59,6 @@ img {
 .main-nav a:hover {
     color: #0bd;
 }
-
 /* HOME */
 .home-content {
     text-align: center;
@@ -87,9 +84,8 @@ img {
     padding: 18px 32px;
 }
 .button:hover {
-    background: #0090aa;
+    background: #0090AA;
 }
-
 /* NEWS */
 #news {
     background-image: url(../images/news-bg.jpg);
@@ -99,7 +95,6 @@ img {
 #news .page-title {
     text-align: center;
 }
-
 .news-contents {
     display: flex;
     justify-content: space-between;
@@ -179,7 +174,6 @@ aside p {
 .sub-menu a:hover {
     color: #0bd;
 }
-
 /* MENU */
 #menu {
     background-image: url(../images/menu-bg.jpg);
@@ -196,7 +190,13 @@ aside p {
     font-size: 1.125rem;
     margin: 10px 0 0;
 }
-
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
 /* FOOTER */
 footer {
     background: #432;
@@ -208,13 +208,11 @@ footer p {
     color: #fff;
     font-size: 0.875rem;
 }
-
 /* MOBILE */
 @media(max-width: 600px) {
     .page-title {
         font-size: 2.5rem;
     }
-
     /* HEADER */
     .page-header {
         flex-direction: column;
@@ -227,12 +225,10 @@ footer p {
     .main-nav li {
         margin: 0 20px;
     }
-
     /* HOME */
     .home-content {
         margin-top: 20%;
     }
-
     /* NEWS */
     .news-contents {
         flex-direction: column;
@@ -240,7 +236,6 @@ footer p {
     article, aside {
         width: 100%;
     }
-
     #news .page-title {
         margin-top: 30px;
     }
@@ -272,8 +267,7 @@ footer p {
     .post-title, .post-cat {
         margin-left: 80px;
     }
-
-    * MENU */
+    /* MENU */
     .menu-content {
         margin-top: 20%;
     }
